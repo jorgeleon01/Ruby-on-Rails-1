@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
 
   def new
     #@article = Article.find(params[:id])
+    @article = Article.new
   end
 
   def show
@@ -13,15 +14,17 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    #if @article.save
-    #  redirect_to @article
-    #else
-    #  render 'new'
-    #end
-    @article = Article.new(article_params)
+  	@article = Article.new(article_params)
  
-    @article.save
-    redirect_to @article
+    if @article.save
+      redirect_to @article
+    else
+      render 'new'
+    end
+    #@article = Article.new(article_params)
+ 
+    #@article.save
+    #redirect_to @article
   end
 
   private
