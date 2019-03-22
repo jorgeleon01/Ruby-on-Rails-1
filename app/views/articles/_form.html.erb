@@ -1,5 +1,5 @@
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
-  
+<%= form_with model: @article, local: true do |form| %>
+ 
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -13,27 +13,19 @@
       </ul>
     </div>
   <% end %>
-
+ 
   <p>
-    <%= form.label :title %>
-    <br>
+    <%= form.label :title %><br>
     <%= form.text_field :title %>
   </p>
  
   <p>
-    <%= form.label :text %>
-    <br>
+    <%= form.label :text %><br>
     <%= form.text_area :text %>
   </p>
  
   <p>
     <%= form.submit %>
   </p>
-<% end %>
-
-
-<h1>New article</h1>
  
-<%= render 'form' %>
-
-<%= link_to 'Back', articles_path %>
+<% end %>
