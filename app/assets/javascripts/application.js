@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= requiere popper 
+//= requiere bootstrap-sprockets
 //= require activestorage
 //= require turbolinks
 //= require_tree .
