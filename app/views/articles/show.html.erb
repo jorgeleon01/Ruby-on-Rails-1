@@ -1,18 +1,25 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<div class="row">
+  <div class="col"></div>
+    <div class="col-md-7">
+      <p>
+        <strong>Titulo:</strong>
+        <%= @article.title %>
+      </p>
  
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+      <p>
+        <strong>Texto:</strong>
+        <%= @article.text %>
+      </p>
  
-<h2>Comments</h2>
-<%= render @article.comments %>
- 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
- 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+      <h2>Comentarios</h2>
+      <%= render @article.comments %>
+      
+      <h2>Agregar comentario:</h2>
+      <%= render 'comments/form' %>
+      <p>
+        <%= link_to 'Editar', edit_article_path(@article), class: "btn btn-md btn-info" %>
+        <%= link_to 'Regresar', articles_path, class: "btn btn-md btn-primary" %>
+      </p>
+    </div>
+  <div class="col"></div>
+</div>

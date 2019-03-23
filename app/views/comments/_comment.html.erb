@@ -9,7 +9,8 @@
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+  <%= link_to 'Eliminar Comentario', [comment.article, comment],
+               class: "btn btn-md btn-danger",
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
 </p>
