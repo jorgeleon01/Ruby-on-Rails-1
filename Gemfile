@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'will_paginate', '~> 3.1', '>= 3.1.7'
+gem 'will_paginate-bootstrap4', '~> 0.2.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

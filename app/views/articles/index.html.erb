@@ -17,7 +17,7 @@
           <tr>
             <td><%= article.title %></td>
             <td><%= article.text %></td>
-            
+
             <td><%= link_to 'Ver', article_path(article), class:'btn btn-lg btn-info'%></td>
             <td><%= link_to 'Editar', edit_article_path(article), class:'btn btn-lg btn-warning'%></td>
             <td><%= link_to 'Eliminar', article_path(article), class:'btn btn-lg btn-danger',
@@ -26,6 +26,7 @@
           </tr>
         <% end %>
       </table>
+      <%= will_paginate @posts, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 1, outer_window: 0 %>
       <%= link_to 'Inicio', welcome_index_path, class:'btn btn-md btn-primary' %>
     </div>
   <div class="col"></div>
