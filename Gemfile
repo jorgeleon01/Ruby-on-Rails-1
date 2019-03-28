@@ -31,6 +31,8 @@ gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'will_paginate-bootstrap4', '~> 0.2.2'
+gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+gem 'capybara', '>= 2.15'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

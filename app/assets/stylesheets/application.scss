@@ -15,6 +15,11 @@
  */
 @import "bootstrap";
 
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
 .container
 {
   padding-top:15px;
